@@ -1,0 +1,19 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dty_test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+#  devtools:
+#    restart:
+#      #热部署生效
+#      enabled: true
+#      #设置重启的目录
+#      additional-paths: src/main/java
+#      #classpath目录下的resources文件夹内容修改不重启
+#      exclude: src/main/resources
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
